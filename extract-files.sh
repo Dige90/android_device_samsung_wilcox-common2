@@ -24,12 +24,12 @@ function extract() {
 }
 
 
-BASE=../../../vendor/samsung/serrano-common/proprietary
+BASE=../../../vendor/samsung/wilcox-common/proprietary
 rm -rf $BASE/*
 
 DEVBASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $DEVBASE/*
 
-extract ../../samsung/serrano-common/proprietary-files.txt $DEVBASE
+extract ../../samsung/wilcox-common/proprietary-files.txt $DEVBASE
 
-./../../samsung/serrano-common/setup-makefiles.sh
+./../../samsung/wilcox-common/setup-makefiles.sh
